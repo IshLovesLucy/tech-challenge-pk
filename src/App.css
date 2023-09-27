@@ -7,7 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5f5f7; /* just an example color; you can adjust it */
+  background: var(--tw-primary-color)
+    url("./assets/imgs/prokeep-bg-texture-blue-optimized.png");
 }
 
 body {

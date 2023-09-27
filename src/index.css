@@ -1,3 +1,9 @@
 :root {
-  --prokeep-login-error-font-color: #ff4d4d;
+  --tw-primary-color: #9cd4d6;
+  --tw-secondary-color: #192b3f;
+  --tw-login-error-font-color: #d95039;
+  --tw-white-color: #ffffff;
+
+  --tw-error-padding: 5px;
+  --ty-positioned-element-top: -20px;
 }

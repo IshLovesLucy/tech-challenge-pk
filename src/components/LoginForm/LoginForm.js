@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import ShowEyeIcon from "./show-eye.svg";
-import HideEyeIcon from "./hide-eye.svg";
+import { loginUser } from "../../api/auth";
+import { validateEmail } from "../../utils/validation";
+import ShowEyeIcon from "../../assets/imgs/show-eye.svg";
+import HideEyeIcon from "../../assets/imgs/hide-eye.svg";
 import "./LoginForm.css";
 
 function LoginForm() {
@@ -10,11 +12,6 @@ function LoginForm() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-
-  const validateEmail = (email) => {
-    const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return pattern.test(email);
-  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +29,7 @@ function LoginForm() {
     }
 
     if (!emailError && !passwordError) {
-      setError(""); // Clear the general error message if no specific errors
+      setError("");
     } else {
       setError("Fix errors below");
     }
@@ -69,20 +66,10 @@ function LoginForm() {
 
     setLoading(true);
     try {
-      const response = await fetch("https://reqres.in/api/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-
-      if (response.ok) {
-        setSuccess(true);
-      } else {
-        setError(data.error || "An error occurred during login.");
-      }
+      await loginUser(formData);
+      setSuccess(true);
     } catch (error) {
-      setError("A network error occurred. Please try again.");
+      setError(error.message);
     }
 
     setLoading(false);
@@ -117,7 +104,8 @@ function LoginForm() {
               onChange={handleInputChange}
               aria-required="true"
               className="login-form__input"
-              placeholder=" " // This is important for the floating label effect
+              placeholder=" "
+              autoComplete="off"
             />
             <label htmlFor="email" className="login-form__label">
               Email
@@ -140,7 +128,7 @@ function LoginForm() {
               onChange={handleInputChange}
               aria-required="true"
               className="login-form__input"
-              placeholder=" " // Again, important for the floating label effect
+              placeholder=" "
             />
             <label htmlFor="password" className="login-form__label">
               Password
