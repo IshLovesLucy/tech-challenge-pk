@@ -4,7 +4,7 @@ This project intends to meet the requirements below while demonstrating forward-
 
 ## Project Requirements
 
-- [x] Use React
+- [x] Use React per challenge requirement
 - [x] Create a login page
 - [x] Include “test” “dev” scripts
 - [x] Login Unit tests
