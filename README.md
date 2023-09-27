@@ -1,13 +1,13 @@
 # Prokeep Challenge
 
-This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows, a few things I picked up along the wway
+This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows, a few things I picked up along the way
 
 ## Project Requirements
 
 - [x] Use React
 - [x] Create a login page
 - [x] Include “test” “dev” scripts
-- [x] Login Unite tesint
+- [x] Login Unit tests
 
 ## Highlights
 
@@ -16,7 +16,7 @@ This project intends to meet the req below while demonstrating forward-thinking,
 - **JSDoc:** Added notes in the code to help anyone who reads it later.
 - **Helpful Tools:** Made checking emails into easy-to-use utils.
 - **Design:** Flexed some design muscles.
-- **Lighthouse:** Included Wave and Lighthouse scores, and made use for semantic markup for ally
+- **Lighthouse:** Included Wave and Lighthouse [scores](https://github.com/IshLovesLucy/tech-challenge-pk/blob/main/scores-lh-ax.png), and made use for semantic markup for ally
 
 ## Running the Project
 
