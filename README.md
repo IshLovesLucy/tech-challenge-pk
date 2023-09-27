@@ -1,6 +1,6 @@
 # Prokeep Challenge
 
-This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows.
+This project intends to meet the requirements below while demonstrating forward-thinking, and a structured approach to scaling as the app grows.
 
 ## Project Requirements
 
@@ -11,12 +11,12 @@ This project intends to meet the req below while demonstrating forward-thinking,
 
 ## Highlights
 
-- **Folders:** Everything's organized so the app can grow.
-- **CSS:** Used some cool tricks to keep the design consistent and easy to change. BEM naming convention.
+- **Folders:** Everything's organized so the app can grow, made use of 'Separation of Concerns' software principle.
+- **CSS:** Used CSS vars and naming convention borrowed from prokeep.com site to keep the design consistent and easy to change. BEM naming convention.
 - **JSDoc:** Added notes in the code to help anyone who reads it later.
-- **Helpful Tools:** Made checking emails into easy-to-use utils.
-- **Design:** Flexed some design muscles.
-- **Lighthouse:** Included Wave and Lighthouse [scores](https://github.com/IshLovesLucy/tech-challenge-pk/blob/main/scores-lh-ax.png), and made use for semantic markup for ally
+- **Helpful Tools:** Made checking emails into easy-to-use util file
+- **Design:** Flexed some design muscle
+- **Lighthouse:** Included Wave and Lighthouse [scores](https://github.com/IshLovesLucy/tech-challenge-pk/blob/main/scores-lh-ax.png), and used semantic markup for A11y (accessibility)
 
 ## Running the Project
 
@@ -28,8 +28,8 @@ This project intends to meet the req below while demonstrating forward-thinking,
 
 ## Design & Assets
 
-- Colors and image assets taken from by prokeep.com
-- PNG were optimized for better performance using https://kraken.io/
+- Colors and image assets taken from prokeep.com homepage
+- PNG optimized for better performance using https://kraken.io/
 - UI drew inspiration from this form https://colorlib.com/etc/lf/Login_v2/index.html
 
 ## Future Considerations
