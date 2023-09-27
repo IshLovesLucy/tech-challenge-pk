@@ -1,13 +1,13 @@
 # Prokeep Challenge
 
-This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows, a few things I picked up along the wway
+This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows, a few things I picked up along the way
 
 ## Project Requirements
 
 - [x] Use React
 - [x] Create a login page
 - [x] Include “test” “dev” scripts
-- [x] Login Unite tesint
+- [x] Login Unit tests
 
 ## Highlights
 
