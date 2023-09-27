@@ -1,0 +1,138 @@
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.login-form__status {
+  height: 18px;
+}
+
+.login-form__title {
+  padding: 5px;
+}
+
+.login-form__input-group {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.login-form__input {
+  width: 95%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid hsl(0, 0%, 87%);
+  background-color: transparent;
+  font-size: 1.1em;
+  color: #555;
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.3s ease;
+  top: 7px;
+}
+
+.login-form__input:focus {
+  border-bottom: 2px solid #007bff;
+  outline: none;
+}
+
+/* Floating Label Styles */
+.login-form__input:not(:placeholder-shown) + .login-form__label,
+.login-form__input:focus + .login-form__label {
+  transform: translateY(-200%) scale(0.9);
+  background-color: #fff;
+  padding: 0;
+  color: #007bff;
+}
+
+.login-form__label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 0;
+  color: #555;
+}
+
+.login-form__toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2; /* Ensure it's above the input */
+}
+
+.login-form__error {
+  color: #ff4d4d;
+  font-size: 0.9em;
+  margin-top: 8px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.login-form__error.visible {
+  opacity: 1;
+}
+
+.login-form__btn-group {
+  margin-top: 20px;
+}
+
+.login-form__submit-btn {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 12px 0;
+  background-image: linear-gradient(to right, #007bff, #33c7ff);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-form__submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+.login-form__submit-btn:hover::before {
+  left: 0;
+}
+
+.login-form__loading {
+  color: #999;
+  font-size: 1em;
+}
+
+.login-form__success {
+  font-size: 1em;
+  color: #28a745;
+}
+
+.login-form__alert {
+  color: var(--prokeep-login-error-font-color);
+}
