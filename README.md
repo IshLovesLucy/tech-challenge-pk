@@ -1,6 +1,6 @@
 # Prokeep Challenge
 
-This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows, a few things I picked up along the way
+This project intends to meet the req below while demonstrating forward-thinking, a structured approach to scaling as the app grows.
 
 ## Project Requirements
 
