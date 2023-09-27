@@ -16,7 +16,7 @@ This project intends to meet the req below while demonstrating forward-thinking,
 - **JSDoc:** Added notes in the code to help anyone who reads it later.
 - **Helpful Tools:** Made checking emails into easy-to-use utils.
 - **Design:** Flexed some design muscles.
-- **Lighthouse:** Included Wave and Lighthouse scores, and made use for semantic markup for ally
+- **Lighthouse:** Included Wave and Lighthouse [scores](https://github.com/IshLovesLucy/tech-challenge-pk/blob/main/scores-lh-ax.png), and made use for semantic markup for ally
 
 ## Running the Project
 
