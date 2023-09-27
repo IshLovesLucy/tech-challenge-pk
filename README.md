@@ -12,7 +12,7 @@ This project intends to meet the req below while demonstrating forward-thinking,
 ## Highlights
 
 - **Folders:** Everything's organized so the app can grow.
-- **CSS:** Used some cool tricks to keep the design consistent and easy to change.
+- **CSS:** Used some cool tricks to keep the design consistent and easy to change. BEM naming convention.
 - **JSDoc:** Added notes in the code to help anyone who reads it later.
 - **Helpful Tools:** Made checking emails into easy-to-use utils.
 - **Design:** Flexed some design muscles.
@@ -30,7 +30,9 @@ This project intends to meet the req below while demonstrating forward-thinking,
 
 - Colors and image assets taken from by prokeep.com
 - PNG were optimized for better performance using https://kraken.io/
+- UI drew inspiration from this form https://colorlib.com/etc/lf/Login_v2/index.html
 
 ## Future Considerations
 
-- Implement auth with encryption
+- Implement encryption
+- Session management (Remember me)
